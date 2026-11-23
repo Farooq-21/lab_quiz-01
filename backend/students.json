@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "id": "STD001",
+    "fullName": "Muhammad Farooq",
+    "email": "farooq@gmail.com",
+    "phone": "03318191265",
+    "department": "Computer Science",
+    "semester": "5",
+    "gender": "Male",
+    "registeredDate": "2026-11-23T12:56:50.602Z"
+  },
+  {
+    "id": "STD002",
+    "fullName": "Muhammad Farooq2",
+    "email": "farooq2@gmail.com",
+    "phone": "03318191265",
+    "department": "Computer Science",
+    "semester": "5",
+    "gender": "Male",
+    "registeredDate": "2026-11-23T12:58:40.553Z"
+  },
+  {
+    "id": "STD003",
+    "fullName": "Sir Abdullah",
+    "email": "xyz2@gmail.com",
+    "phone": "0300000000000",
+    "department": "Software Engineering",
+    "semester": "8",
+    "gender": "Male",
+    "registeredDate": "2026-11-23T13:06:45.854Z"
+  },
+  {
+    "id": "STD004",
+    "fullName": "Urwa Imran",
+    "email": "A@gmail.com",
+    "phone": "1234567890",
+    "department": "Computer Science",
+    "semester": "1",
+    "gender": "Female",
+    "registeredDate": "2026-11-23T13:11:26.880Z"
+  }
+]
