@@ -1,0 +1,313 @@
+/* ========================================
+   Color Variables - Premium Theme
+   ======================================== */
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark-maroon: #800020;
+    --charcoal: #36454F;
+    --light-gray: #F8F9FA;
+    --border-color: #E0E0E0;
+}
+
+/* ========================================
+   Global Styles
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+/* ========================================
+   Navigation Bar
+   ======================================== */
+.bg-charcoal {
+    background-color: var(--charcoal) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ========================================
+   Dashboard Card
+   ======================================== */
+.dashboard-card {
+    background: linear-gradient(135deg, var(--dark-maroon), #a0032a);
+    color: var(--white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(128, 0, 32, 0.3);
+    text-align: center;
+}
+
+.dashboard-card h4 {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.student-count {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ========================================
+   Form Card
+   ======================================== */
+.form-card {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h3 {
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--dark-maroon);
+}
+
+/* ========================================
+   Form Styling
+   ======================================== */
+.form-label {
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--dark-maroon);
+    box-shadow: 0 0 0 0.2rem rgba(128, 0, 32, 0.15);
+    outline: none;
+}
+
+/* ========================================
+   Buttons
+   ======================================== */
+.btn-maroon {
+    background-color: var(--dark-maroon);
+    color: var(--white);
+    padding: 0.75rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-maroon:hover {
+    background-color: #a0032a;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(128, 0, 32, 0.3);
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+    transform: translateY(-1px);
+}
+
+/* ========================================
+   Students Section
+   ======================================== */
+.students-section {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.students-section h3 {
+    color: var(--black);
+    font-weight: 600;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--dark-maroon);
+}
+
+/* ========================================
+   Table Styling
+   ======================================== */
+.table {
+    margin-top: 1.5rem;
+}
+
+.table thead {
+    background-color: var(--charcoal);
+    color: var(--white);
+}
+
+.table thead th {
+    padding: 1rem;
+    font-weight: 500;
+    border: none;
+}
+
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: var(--light-gray);
+}
+
+.table tbody td {
+    padding: 1rem;
+    vertical-align: middle;
+    color: var(--black);
+}
+
+/* ========================================
+   Alert Messages
+   ======================================== */
+.alert {
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .dashboard-card {
+        padding: 1.5rem;
+    }
+    
+    .student-count {
+        font-size: 2.5rem;
+    }
+    
+    .form-card,
+    .students-section {
+        padding: 1.5rem;
+    }
+    
+    .table {
+        font-size: 0.875rem;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+    .dashboard-card {
+        padding: 1rem;
+    }
+    
+    .student-count {
+        font-size: 2rem;
+    }
+    
+    .form-card,
+    .students-section {
+        padding: 1rem;
+    }
+    
+    .form-card h3,
+    .students-section h3 {
+        font-size: 1.25rem;
+    }
+    
+    .btn-maroon {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .table {
+        font-size: 0.75rem;
+    }
+    
+    .table thead th,
+    .table tbody td {
+        padding: 0.5rem;
+    }
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+.text-muted {
+    color: #6c757d !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.alert {
+    animation: fadeIn 0.3s ease;
+}
